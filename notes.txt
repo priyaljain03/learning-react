@@ -1,0 +1,76 @@
+
+
+
+--------------------------------------------------------------------------------------------->
+Episode 2:
+
+
+
+
+What is package.json file ?
+- Configuration file for the project.
+- It contains the information about the project and the dependencies.
+- It is used to install the dependencies and the packages for the project.
+
+What is package-lock.json file?
+- This keeps track of the exact version of the dependencies that are installed in the node_modules folder.
+- This is a very important file for the project.
+
+node_modules folder:
+- This gets created when we do npm install.
+- npm i fetches all the data we requested and puts it into the node_modules folder.
+- node_modules is a very heavy folder.
+
+
+Should we commit node_modules folder to the repository?
+- No, we should not commit node_modules folder to the repository.
+- We should commit package.json and package-lock.json files to the repository.
+- Always put node_modules folder in the .gitignore file.
+- package-lock.json locks the version of the dependencies so in producttion we know exact version . So with the use of package.json and package-lock.json we can regenerate the node_modukes.So we dont need to push the node_modules to git.
+- Whatever we can regenerate do not put up on the git.only have essential things on git.
+
+
+To host : 
+run npx parcel index.html
+parcel creates a server for us and then runs the project on that server
+What is npx: executing a package --> npx packagename
+What is npm: installing a package
+
+
+Ways to include react :
+1.CDN --> not a preferred Way
+--> fetching from cdn is expensive (network call)
+--> everytime version changes url needs to be changed/
+
+2.Npm
+
+--> Already in the node_modukes (no network call and quicker)
+
+Installing react : npm i react
+Install react-dom : npm i react-dom
+
+What all parcel does ? :
+- dev build
+- Local server
+- HMR
+- Caching - Faster builds
+- File wathcing algorithm
+- Image optimization
+- Minification
+- Bundling
+- Compressing
+- Consistent hashing
+- Code splitting
+- Differential bundling - support older brwosers
+- Diagnostic
+- Error handling
+- Host on HTTPS
+- Tree shaking - remove unused code.
+- Different dev and prod bundles
+
+
+Creating a prod build :
+npx parcel build index.html
+
+NOTE: remove "main": "App.js" from package.json. as we are givingn the entry point in the command itself there is no need of this.
+

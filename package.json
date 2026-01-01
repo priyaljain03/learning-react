@@ -1,0 +1,26 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Learning react",
+  "homepage": "https://github.com/priyaljain03/learning-react#readme",
+  "bugs": {
+    "url": "https://github.com/priyaljain03/learning-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyaljain03/learning-react.git"
+  },
+  "license": "ISC",
+  "author": "priyal jain",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}
