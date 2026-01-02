@@ -74,3 +74,13 @@ npx parcel build index.html
 
 NOTE: remove "main": "App.js" from package.json. as we are givingn the entry point in the command itself there is no need of this.
 
+
+--------------------------------------------------------------------------------------------->
+Episode 3: 
+
+npx parcel index.html (this command executes a npm package called parcel and runs the project on the server file index.html.)
+
+React Elements: : It is an object not a DOM element.
+--> React.createElement("h1", {id: "heading"}, "Namaste React!"); is not a good way to create react elements.Very clumsy and complicated.
+
+JSX : It is a Html like syntax inside which we can write JSX
